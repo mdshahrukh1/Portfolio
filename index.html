@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fca39997fd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img class="logo" src="images/logo1.png" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>FULL STACK Web-Developer & Designer</p>
+                <h1>Hi, I'm <span>Md Shahrukh</span> <br> From Kolkata, India.</h1>
+            </div>
+        </div>
+    </div>
+
+    <!---------------About---------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm MD Shahrukh a passionate web developer dedicated to crafting scalable, high-performance
+                        applications that deliver seamless user experiences. My expertise lies in full-stack
+                        development, and I'm continuously expanding my skill set to refine my knowledge of CSS layouts,
+                        Firebase Authentication, and modern web technologies.
+
+                        Beyond coding, I have a strong commitment to education, mentoring students in mathematics to
+                        help them grasp complex concepts with clarity. Teaching has sharpened my ability to communicate
+                        effectively, making me not just a technical problem solver but also a thoughtful collaborator.
+                        I thrive on solving real-world challenges through code and logic, and I'm eager to contribute to
+                        open-source projects that create impact in the tech community. My long-term goal is to become a
+                        senior full-stack developer, leading innovative projects and mentoring upcoming developers.
+
+                        Let's connect and build something amazing together!
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>Wesite Design</span><br>Designing Web interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>Wesite Design</span><br>Designing Web interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br>B-Tech</li>
+                            <li><span>2024</span><br>Full Stack Web-Development</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------Services----------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Web Design</h2>
+                    <p>As a web designer, I offer professional services focused on creating visually appealing,
+                        user-friendly, and fully responsive websites tailored to clients' needs. My expertise includes
+                        UI/UX design, branding, landing pages, and e-commerce solutions, ensuring seamless functionality
+                        across all devices. I also specialize in optimizing website performance, incorporating SEO best
+                        practices, and enhancing accessibility for broader user engagement. Whether designing from
+                        scratch, revamping existing sites, or maintaining them for long-term success, I am committed to
+                        delivering high-quality, modern web experiences. Let's collaborate to build something impactful!
+                    </p>
+                    <a href="https://ecommerce-app-frontend-swart.vercel.app/">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>As a full-stack developer, I specialize in building scalable, high-performance web applications
+                        with seamless user experiences. My expertise spans both front-end and back-end technologies,
+                        ensuring robust functionality and responsive designs. I focus on clean, efficient code,
+                        leveraging frameworks and tools like Firebase Authentication, CSS layouts, and modern JavaScript
+                        libraries to enhance usability. Whether developing dynamic websites, optimizing databases, or
+                        integrating third-party services, I strive to create solutions that are intuitive, secure, and
+                        performance-driven. Let’s collaborate to turn ideas into reality with innovative web
+                        development!</p>
+                    <a href="https://ecommerce-app-frontend-swart.vercel.app/">Learn more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-------------------Portfolio---------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>E-commerce Web App</h3>
+                        <p>We Built this responsive e-commerce platform with user authentication, product filtering,
+                            cart, and checkout functionality. Includes an admin panel for product/order management.
+                        </p>
+                        <a href="https://ecommerce-app-frontend-swart.vercel.app/">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>E-commerce Web App Admin Panel</h3>
+                        <p>We Built this responsive e-commerce platform with user authentication, product filtering,
+                            cart, and checkout functionality. Includes an admin panel for product/order management.
+                        </p>
+                        <a href="https://ecommerce-app-admin-dun-three.vercel.app/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Netflix Clone App</h3>
+                        <p>I developed a responsive Netflix clone using React.js for the frontend and Firebase for
+                            backend services like authentication and Firestore database. Users can sign up or sign in
+                            securely, and their data is stored in Firestore. The app fetches and displays movie details
+                            and trailers using the TMDB API. It features a navigation bar, dynamic movie banner,
+                            scrollable movie lists, and a footer. Clicking on a movie thumbnail opens a trailer view
+                            with more information and a back option to return to the homepage.
+                        </p>
+                        <a href="https://netflix-clone-sepia-iota.vercel.app/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="" class="btn">See more</a>
+        </div>
+    </div>
+    <!---------------------Contact----------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>shahrukh80912@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 8583-9254-51</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/mdshahrukh1"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a class="btn btn-2" href="images/my-cv.pdf" download>Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+                        <button class="btn btn-2" type="submit">Submit</button>
+                        <span id="msg"></span>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright <i class="fa-regular fa-copyright"></i> MDS. Made with <i class="fa-solid fa-heart"></i> By MD
+                Shahrukh.</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyCzhTFTFrizYGrEwUfPQgrrxgQgXDnVuBls7OFYK2qWpjhcC9lSJ0eG3j3wda9lVZz/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
